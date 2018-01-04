@@ -4,11 +4,64 @@
         <meta charset="utf-8">
         <title>Welcome</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
     </head>
 
     <body>
-        <div class="navbar">
-            <h1>Menu</h1>
+        <div class="main">
+            <div class="menu">
+                <h1>Menu</h1>
+                <div class="nav">
+                    <a onclick="console.log('Hello, World!');">1</a>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <a id="HealthNav" onclick="setScroll('')"><h4>Health</h4></a>
+                    <a><h4>Fitness</h4></a>
+                    <a><h4>Beauty</h4></a>
+                    <a><h4>Lifestyle</h4></a>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div id="Health">
+                <h2>Health:</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="download.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Fitness">
+                <h2>Fitness:</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="download.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Beauty">
+                <h2>Beauty:</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="download.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Lifestyle">
+                <h2>Lifestyle:</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="download.jpg"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

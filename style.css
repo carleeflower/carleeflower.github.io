@@ -1,8 +1,42 @@
-.navbar {
+.main {
+    position: fixed;
+}
+
+.menu {
     background-color: #333333;
     color: white;
     position: relative;
     display: flex;
     right: 10px;
     bottom: 10px;
+    padding-left: 10px;
+    padding-right: 100%;
+}
+
+.navbar {
+    background-color: #222222;
+    color: white;
+    position: relative;
+    display: flex;
+    right: 10px;
+    bottom: 10px;
+}
+
+a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    z-index: -1;
+}
+
+img {
+    z-index: -5;
+}
+
+li {
+    list-style-type: none;
 }
