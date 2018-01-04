@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     right: 10px;
-    bottom: 10px;
+    bottom: 20px;
     padding-left: 10px;
     padding-right: 100%;
 }
@@ -19,7 +19,15 @@
     position: relative;
     display: flex;
     right: 10px;
-    bottom: 10px;
+    bottom: 20px;
+}
+
+#nav {
+    position: absolute;
+    z-index: 1;
+    float: right;
+    top: 25px;
+    right: 10px;
 }
 
 a {
@@ -31,10 +39,8 @@ a {
 
 .content {
     z-index: -1;
-}
-
-img {
-    z-index: -5;
+    position: relative;
+    /*top: 115px;*/
 }
 
 li {

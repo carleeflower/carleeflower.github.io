@@ -11,13 +11,11 @@
         <div class="main">
             <div class="menu">
                 <h1>Menu</h1>
-                <div class="nav">
-                    <a onclick="console.log('Hello, World!');">1</a>
-                </div>
+                    <a id="nav" onclick="display();"><img src="menu.png" width="48" height="24" /></a>
             </div>
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <ul>
-                    <a id="HealthNav" onclick="setScroll('')"><h4>Health</h4></a>
+                    <a id="HealthNav" onclick="setScroll('Health')"><h4>Health</h4></a>
                     <a><h4>Fitness</h4></a>
                     <a><h4>Beauty</h4></a>
                     <a><h4>Lifestyle</h4></a>
@@ -25,13 +23,16 @@
             </div>
         </div>
 
+        <div class="desc">
+            <h1>Welcome</h1>
+        </div>
 
-        <div class="content">
+        <div class="content" id="content">
             <div id="Health">
                 <h2>Health:</h2>
                 <ul>
                     <li>
-                        <a href="#"><img src="download.jpg"></a>
+                        <img src="download.jpg">
                     </li>
                 </ul>
             </div>
@@ -40,7 +41,7 @@
                 <h2>Fitness:</h2>
                 <ul>
                     <li>
-                        <a href="#"><img src="download.jpg"></a>
+                        <img src="download.jpg">
                     </li>
                 </ul>
             </div>
@@ -49,7 +50,7 @@
                 <h2>Beauty:</h2>
                 <ul>
                     <li>
-                        <a href="#"><img src="download.jpg"></a>
+                        <img src="download.jpg">
                     </li>
                 </ul>
             </div>
@@ -58,7 +59,7 @@
                 <h2>Lifestyle:</h2>
                 <ul>
                     <li>
-                        <a href="#"><img src="download.jpg"></a>
+                        <img src="download.jpg">
                     </li>
                 </ul>
             </div>

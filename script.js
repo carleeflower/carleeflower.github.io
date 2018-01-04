@@ -1,3 +1,5 @@
+var navOn = false;
+
 window.onscroll = function() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -9,7 +11,6 @@ window.onscroll = function() {
     if(scrolled < document.getElementById("Health").scrollHeight / height * 10) {
         setColor("HealthNav", "white");
     }
-    console.log(document.getElementById("Health").scrollHeight / height * 100);
 };
 
 function setColor(id, c) {
@@ -19,3 +20,13 @@ function setColor(id, c) {
 function setScroll(id) {
     document.documentElement.scrollTop = 50;
 }
+
+function display() {
+    document.getElementById("navbar").style = "display: " + (navOn ? "static;" : "none;");
+    document.getElementById("content").style = "top: " + (navOn ? "300px;" : "75px;");
+    navOn = !navOn;
+}
+
+window.onload = function() {
+    display();
+};
