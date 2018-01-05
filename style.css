@@ -1,4 +1,4 @@
-.main {
+.menu, .navbar {
     position: fixed;
 }
 
@@ -35,6 +35,13 @@ a {
     position: relative;
     text-decoration: none;
     cursor: pointer;
+}
+
+.desc {
+    text-align: center;
+    background-color: #444444;
+    color: white;
+    padding: 10%;
 }
 
 .content {
